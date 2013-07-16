@@ -10,7 +10,19 @@
     <link type="text/css" rel="stylesheet"
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css"
           />
-    <style type="text/css">
+    <link type="text/css" rel="stylesheet"
+          href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"
+          />
+    <link type="text/css" rel="stylesheet"
+          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css"
+          />
+    <script type="application/javascript"
+            src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"
+          ></script>
+    <script type="application/javascript"
+            src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"
+          ></script>
+   <style type="text/css">
       /* variations for wide browsers */
       @media (min-width: 980px) {
         body {
@@ -40,43 +52,44 @@
         }
       }
 
+      /* media-independent styles */
       .actions {
         background-color: #333333;
         padding: 3% 0%;
       }
-      body {
-        padding-top: 20 px; padding-bottom: 40px;
-      }
-      .container {
-        width: 960px;
-      }
-      .faq,
-      .footer,
-      .section1,
-      .section2 {
-        padding: 10px 0px 10px 0px;
-      }
-      .heading,
-      .subheading {
-        text-align: center;
-      }
+      .asset,
       .pitch {
         padding: 2.5% 0%;
       }
-      .order,
-      .social,
-      .thermometer {
-        height: 40px;
-        line-height: 40px;
+      .copy {
+        padding-bottom: 2.5%;
+        padding-top: 2.5%;
+        text-align: justify;
       }
+      .footer {
+        color: #cccccc;
+      }
+      .footer a {
+        color: #ccccff;
+      }
+      .footer p {
+        font-size: 80%;
+      }
+      .footer,
+      .heading,
       .order,
       .social,
       .statistics,
+      .subheading,
       .thermometer,
       .video {
         text-align: center;
       }
+      .order {
+        padding: 2% 0%;
+      }
       p.lead {
+        font-size: 120%;
         line-height: 30px;
         padding-top: 1.5%;
       }
@@ -112,16 +125,17 @@
         <div class="span12">
           <h1>Bitstarter Title</h1>
         </div>
-      </div>
+      </div><!-- .heading -->
       <div class="row-fluid subheading">
         <div class="span12">
           <p class="lead">This is a bitstarter project for Coursera
           Startup Engineering.</p>
         </div>
-      </div>
+      </div><!-- .subheading -->
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300" />
+          <img class="img-polaroid" src="http://placehold.it/480x300"
+               alt="video placeholder" />
         </div>
         <div class="span5 actions">
           <div class="span8 offset2">
@@ -152,21 +166,77 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div><!-- .span10 .offset1 -->
-          <div class="order">Order</div>
-          <div class="social">Social</div>
+          <div class="span6 offset3 order">
+            <button class="btn btn-success
+                           btn-large">Preorder</button>
+          </div><!-- .order -->
+          <div class="span8 offset2 social">
+            <button class="btn btn-twitter"><i
+              class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i
+              class="icon-facebook"></i> | Facebook</button>
+          </div><!-- .social -->
         </div><!-- .actions -->
-      </div>
+      </div><!-- .pitch -->
       <div class="row-fluid section1">
-        <div class="span12">Marketing Section 1</div>
-      </div>
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid"
+               src="http://placehold.it/480x300"
+               alt="marketing asset placeholder" />
+        </div>
+        <div class="span5 copy">
+          <p>Lorem ipsum dolor et cetera censeo Carthago delenda
+          esse…</p>
+        </div>
+      </div><!-- .section1 -->
       <div class="row-fluid section2">
-        <div class="span12">Marketing Section 2</div>
-      </div>
+        <div class="span5 offset1 copy copy-right">
+          <p>Quidquid latine dictum sit altum viditur. De mortuus
+          nihil nisi bonum dixit.</p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid"
+               src="http://placehold.it/480x300"
+               alt="marketing asset placeholder" />
+        </div>
+      </div><!-- .section2 -->
       <div class="row-fluid faq">
-        <div class="span12">FAQ</div>
-      </div>
+        <div class="span10 offset1">
+          <h3>FAQL</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#faql-def">What
+                does FAQL stand for?</a>
+              </div><!-- .accordion-heading -->
+              <div id="faql-def" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>Frequently Asked Questions List.</p>
+                </div>
+              </div><!-- .accordion-body #faql-def -->
+            </div><!-- .accordion-group -->
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#why-faql">Why
+                “FAQL” instead of “FAQ”?</a>
+              </div><!-- .accordion-heading -->
+              <div id="why-faql" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>Because I am a cranky old man and we always
+                  called it a FAQL back on USENET.</p>
+                </div>
+              </div><!-- .accordion-body #why-faql -->
+            </div><!-- .accordion-group -->
+          </div><!-- .accordion -->
+        </div><!-- .span10 .offset1 -->
+      </div><!-- .faq -->
       <div class="row-fluid footer">
-        <div class="span12">Footer</div>
+        <div class="span12">
+          <p>Copyright © 2013 OffTheGrid Group, Inc.  All rights
+          reserved.</p>
+        </div>
       </div>
     </div>
   </body>
