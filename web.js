@@ -5,6 +5,8 @@ var app = express.createServer(express.logger());
 var fs = require('fs');
 var index_file = "index.html";
 
+app.use( express.static( __dirname + '/assets' ) );
+
 app.get( '/', function( request, response ) {
     var index_buf = fs.readFileSync( index_file );
     var index_str = index_buf.toString();

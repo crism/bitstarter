@@ -1,28 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type"
-          content="text/html;charset=utf-8" />
-    <title>Coursera Startup Engineering Bitstarter</title>
+          content="text/html;charset=utf-8">
+    <title>OhYouHero Bitstarter</title>
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
+          content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet"
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css"
-          />
+          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link type="text/css" rel="stylesheet"
-          href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"
-          />
+          href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link type="text/css" rel="stylesheet"
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css"
-          />
+          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <script type="application/javascript"
             src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"
           ></script>
     <script type="application/javascript"
             src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"
           ></script>
-   <style type="text/css">
+    <style type="text/css">
       /* variations for wide browsers */
       @media (min-width: 980px) {
         body {
@@ -55,11 +52,14 @@
       /* media-independent styles */
       .actions {
         background-color: #333333;
-        padding: 3% 0%;
+        padding: 2.5% 0%;
       }
       .asset,
       .pitch {
         padding: 2.5% 0%;
+      }
+      .comic {
+        border: none;
       }
       .copy {
         padding-bottom: 2.5%;
@@ -81,17 +81,22 @@
       .social,
       .statistics,
       .subheading,
-      .thermometer,
-      .video {
+      .thermometer {
         text-align: center;
+      }
+      .nav-collapse {
+        padding: 3px 0px;
       }
       .order {
         padding: 2% 0%;
       }
       p.lead {
         font-size: 120%;
-        line-height: 30px;
+        line-height: 120%;
         padding-top: 1.5%;
+      }
+      .pitch .asset {
+        padding: 0%;
       }
       .statistics h3,
       .statistics p {
@@ -109,7 +114,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#" title="OhYouHero Bitstarter">
+            <img class="logo" src="oyh_logo_sm.png" alt="OhYouHero">
+          </a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -123,38 +130,39 @@
     <div class="container">
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Bitstarter Title</h1>
+          <h1>
+            <img class="logo" src="oyh_logo_med.png" alt="OhYouHero">
+          </h1>
         </div>
       </div><!-- .heading -->
       <div class="row-fluid subheading">
         <div class="span12">
-          <p class="lead">This is a bitstarter project for Coursera
-          Startup Engineering.</p>
+          <p class="lead">Be a superhero and save the economy!</p>
         </div>
       </div><!-- .subheading -->
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300"
-               alt="video placeholder" />
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid comic" src="professional_woman.png"
+               alt="Professional Woman!">
         </div>
         <div class="span5 actions">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
                 <div class="linediv-l">
-                  <h3>n</h3>
+                  <h3>0</h3>
                   <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$n</h3>
-                  <p>out of $t</p>
+                  <h3>$0</h3>
+                  <p>out of $50,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                  <h3>d</h3>
+                  <h3>60</h3>
                   <p>days remaining</p>
                 </div>
               </div>
@@ -179,17 +187,6 @@
         </div><!-- .actions -->
       </div><!-- .pitch -->
       <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid"
-               src="http://placehold.it/480x300"
-               alt="marketing asset placeholder" />
-        </div>
-        <div class="span5 copy">
-          <p>Lorem ipsum dolor et cetera censeo Carthago delenda
-          esse…</p>
-        </div>
-      </div><!-- .section1 -->
-      <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>Quidquid latine dictum sit altum viditur. De mortuus
           nihil nisi bonum dixit.</p>
@@ -197,47 +194,26 @@
         <div class="span5 asset">
           <img class="img-polaroid"
                src="http://placehold.it/480x300"
-               alt="marketing asset placeholder" />
+               alt="marketing asset placeholder">
+        </div>
+      </div><!-- .section1 -->
+      <div class="row-fluid section2">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid"
+               src="http://placehold.it/480x300"
+               alt="marketing asset placeholder">
+        </div>
+        <div class="span5 copy">
+          <p>Lorem ipsum dolor et cetera censeo Carthago delenda
+          esse…</p>
         </div>
       </div><!-- .section2 -->
-      <div class="row-fluid faq">
-        <div class="span10 offset1">
-          <h3>FAQL</h3>
-          <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse"
-                   data-parent="#accordion2" href="#faql-def">What
-                does FAQL stand for?</a>
-              </div><!-- .accordion-heading -->
-              <div id="faql-def" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>Frequently Asked Questions List.</p>
-                </div>
-              </div><!-- .accordion-body #faql-def -->
-            </div><!-- .accordion-group -->
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse"
-                   data-parent="#accordion2" href="#why-faql">Why
-                “FAQL” instead of “FAQ”?</a>
-              </div><!-- .accordion-heading -->
-              <div id="why-faql" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>Because I am a cranky old man and we always
-                  called it a FAQL back on USENET.</p>
-                </div>
-              </div><!-- .accordion-body #why-faql -->
-            </div><!-- .accordion-group -->
-          </div><!-- .accordion -->
-        </div><!-- .span10 .offset1 -->
-      </div><!-- .faq -->
       <div class="row-fluid footer">
         <div class="span12">
           <p>Copyright © 2013 OffTheGrid Group, Inc.  All rights
           reserved.</p>
         </div>
-      </div>
+      </div><!-- .footer -->
     </div>
   </body>
 </html>
