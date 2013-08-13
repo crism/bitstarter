@@ -98,7 +98,7 @@
         padding: 3px 0px;
       }
       .order {
-        padding: 2% 0%;
+        padding-left: 28px; /* Coinbase script produces off-center button */
       }
       p.lead {
         font-size: 120%;
@@ -199,8 +199,12 @@
             </div><!-- .row-fluid -->
             <div class="row-fluid">
               <div class="span6 offset3 order">
-                <button class="btn btn-success
-                    btn-large">Contribute</button>
+                <a class="coinbase-button" data-code="300b665930ca08f881c44b13a9462818"
+                  data-button-style="custom_small"
+                  href="https://coinbase.com/checkouts/300b665930ca08f881c44b13a9462818"
+                  >Donate Bitcoins</a>
+                <script src="https://coinbase.com/assets/button.js" type="text/javascript">
+                </script>
               </div><!-- .order -->
             </div><!-- .row-fluid -->
             <div class="row-fluid">
